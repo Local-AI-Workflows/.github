@@ -76,27 +76,30 @@ All services run in Docker. Full hardware specs, SSH credentials, and service UR
 
 ```mermaid
 graph TD
-    subgraph OW["🖥️ Ollama Workstation\nollama.ios.htwg-konstanz.de\nXeon E5-2667v4 · 32GB · Quadro P6000"]
+    subgraph OW[Ollama Workstation]
+        OW_INFO["ollama.ios.htwg-konstanz.de\nXeon E5-2667v4 · 32 GB · Quadro P6000"]:::info
         OW_OLLAMA[Ollama]
-        OW_WEBUI["Open WebUI 1\n:3000"]
-        OW_LIBRE["LibreChat\n:80"]
+        OW_WEBUI[Open WebUI 1 :3000]
+        OW_LIBRE[LibreChat :80]
         OW_FOG[Fogcast-MCP]
     end
 
-    subgraph GS["🖥️ GPU-Server01\ngpu-server01.ios.htwg-konstanz.de\n2x Xeon Gold 6134 · 128GB · 2x Tesla V100"]
+    subgraph GS[GPU-Server01]
+        GS_INFO["gpu-server01.ios.htwg-konstanz.de\n2x Xeon Gold 6134 · 128 GB · 2x Tesla V100"]:::info
         GS_OLLAMA[Ollama]
-        GS_WEBUI["Open WebUI 2\n:8080"]
-        GS_N8N["n8n\n:5678"]
+        GS_WEBUI[Open WebUI 2 :8080]
+        GS_N8N[n8n :5678]
         GS_PA[Praktikantenamt AI]
     end
 
-    subgraph GP["🖥️ GPU-PC01\ngpu-pc01.ios.htwg-konstanz.de\nRyzen 9 5900X · 32GB · RTX 3080 Ti"]
+    subgraph GP[GPU-PC01]
+        GP_INFO["gpu-pc01.ios.htwg-konstanz.de\nRyzen 9 5900X · 32 GB · RTX 3080 Ti"]:::info
         GP_VLLM[vLLM]
     end
 
-    subgraph AT["🖥️ Atlas Server\natlas.ios.htwg-konstanz.de\n2x Xeon E5-2630v3 · 128GB · Tesla P100 + Tesla M10"]
-        AT_NOTE["Available\n(no assigned services)"]
-    end
+
+
+    classDef info fill:#1e1e2e,stroke:#444,color:#888,font-size:11px
 ```
 
 ---
