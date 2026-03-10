@@ -1,7 +1,7 @@
 # Local-AI-Workflows
 
 > Research & development of AI-powered workflows using local LLMs at **HTWG Konstanz** (IOS Lab).
-> This organization contains the projects from the team project *"Untersuchung von LLM Workflows"* (WS 2024/25 – SS 2025).
+> This organization contains the projects from the team project *"Untersuchung von LLM Workflows"* (SS 2025 - WS 2025/26).
 
 ---
 
